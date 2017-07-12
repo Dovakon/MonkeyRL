@@ -1,122 +1,121 @@
-V: 0   -1.857513
-V: 1   0
-V: 2   0
-V: 3   -0.19
-V: 4   0
-V: 5   -1.374908
-V: 6   -1.657661
-V: 7   0
-V: 8   0
-V: 9   -0.19
-V: 10   0
-V: 11   -1.163379
-V: 12   -1.222767
-V: 13   0
-V: 14   0
-V: 15   -0.19
-V: 16   0
-V: 17   -0.8436922
-V: 18   -0.8512546
-V: 19   0
-V: 20   0
-V: 21   -0.19
-V: 22   0
-V: 23   -0.6276233
-V: 24   -0.5567517
-V: 25   0
-V: 26   0
-V: 27   -0.19
-V: 28   0
-V: 29   -0.36181
-V: 30   -0.3839312
-V: 31   0
-V: 32   0
-V: 33   -0.19
-V: 34   0
-V: 35   -0.109
-V: 36   4.262432
-V: 37   0
-V: 38   0
-V: 39   53.25352
-V: 40   -0.3591421
-V: 41   0
-V: 42   0
-V: 43   0
-V: 44   0
-V: 45   -0.2938322
-V: 46   -0.1464935
-V: 47   0
-V: 48   0
-V: 49   0
-V: 50   0
-V: 51   -0.26268
-V: 52   -0.1266319
-V: 53   0
-V: 54   0
-V: 55   0
-V: 56   0
-V: 57   -0.1303368
-V: 58   -0.11791
-V: 59   0
-V: 60   0
-V: 61   0
-V: 62   0
-V: 63   -0.109
-V: 64   -0.110539
-V: 65   0
-V: 66   0
-V: 67   0
-V: 68   0
-V: 69   -0.1
-V: 70   -0.126658
-V: 71   0
-V: 72   0
-V: 73   0
-V: 74   0
-V: 75   0.2901156
-V: 76   -0.07440197
-V: 77   0
-V: 78   0
-V: 79   3.932946
-V: 80   -1.555812
-V: 81   0
-V: 82   0
-V: 83   0
-V: 84   0
-V: 85   -1.277342
-V: 86   -1.214915
-V: 87   0
-V: 88   0
-V: 89   0
-V: 90   0
-V: 91   -0.9840658
-V: 92   -1.072301
-V: 93   0
-V: 94   0
-V: 95   0
-V: 96   0
-V: 97   -0.7464814
-V: 98   -0.8359079
-V: 99   0
-V: 100   0
-V: 101   0
-V: 102   0
-V: 103   -0.4502373
-V: 104   -0.1980596
-V: 105   0
-V: 106   0
-V: 107   0
-V: 108   0
-V: 109   -0.2071
-V: 110   -0.109
-V: 111   0
-V: 112   0
-V: 113   0
-V: 114   0
-V: 115   -0.1
-V: 116   1.23282
-V: 117   0
-V: 118   0
-V: 119   27.73013
-V: 120   0
+V: 0   Nothing: -0.879038  Left: -0.5588179   Right: -1.490119   Up & Left: -0.5227851  Up & Right: -1.256672   Up: -0.8715408
+V: 1   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 2   Nothing: -0.59558  Left: -0.662891   Right: -0.8970564   Up & Left: -1.072085  Up & Right: -0.9295079   Up: -0.8261231
+V: 3   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 4   Nothing: -0.5853113  Left: -0.7460565   Right: -0.6689911   Up & Left: -0.6520069  Up & Right: -0.8041238   Up: -0.7351105
+V: 5   Nothing: -0.110539  Left: -0.199   Right: -0.215119   Up & Left: -0.1  Up & Right: 0   Up: -0.2306629
+V: 6   Nothing: -0.4279024  Left: 0   Right: -0.2748508   Up & Left: -0.302521  Up & Right: -0.1629546   Up: -0.1
+V: 7   Nothing: -0.6781148  Left: -0.7799216   Right: -0.8874223   Up & Left: -0.4919869  Up & Right: -0.882416   Up: -0.9221261
+V: 8   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 9   Nothing: -0.8384863  Left: -0.5563934   Right: -0.6870372   Up & Left: -0.6653715  Up & Right: 0.4471436   Up: -0.7375109
+V: 10   Nothing: 0  Left: 0   Right: 0   Up & Left: -0.1  Up & Right: 0   Up: 0
+V: 11   Nothing: -0.2087244  Left: 0   Right: -0.2858744   Up & Left: 0  Up & Right: -0.5691383   Up: -0.1
+V: 12   Nothing: -0.4009534  Left: -0.538643   Right: -0.3583951   Up & Left: -0.7957374  Up & Right: -0.3866675   Up: -0.1343237
+V: 13   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 14   Nothing: -0.28  Left: -0.109   Right: -2.813917   Up & Left: -0.09578781  Up & Right: -0.352   Up: -0.3342509
+V: 15   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 16   Nothing: -0.1194475  Left: 0   Right: -1.909   Up & Left: 0  Up & Right: -0.199   Up: 0
+V: 17   Nothing: 0  Left: -0.1   Right: -0.1   Up & Left: -0.6582229  Up & Right: -0.1   Up: -0.1
+V: 18   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 19   Nothing: 0  Left: -1.009   Right: 0   Up & Left: -0.19  Up & Right: -0.19   Up: 0
+V: 20   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 21   Nothing: 0  Left: -1   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 22   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 23   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 24   Nothing: 0  Left: 0   Right: -0.1   Up & Left: 0  Up & Right: 0   Up: 0
+V: 25   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 26   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 27   Nothing: -0.1  Left: 0   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 28   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 29   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: -0.1
+V: 30   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 31   Nothing: 0  Left: -0.109   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 32   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 33   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 34   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 35   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 36   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 37   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 38   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 39   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 40   Nothing: -1.103715  Left: -0.8072129   Right: -1.078958   Up & Left: -1.156058  Up & Right: -0.8944485   Up: -1.063003
+V: 41   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 42   Nothing: -1.302244  Left: -0.9719691   Right: -0.6124797   Up & Left: -0.8675745  Up & Right: -1.077264   Up: -1.107631
+V: 43   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 44   Nothing: -0.6855869  Left: -0.5608456   Right: -0.8977834   Up & Left: -1.061238  Up & Right: -0.9292396   Up: -0.7654969
+V: 45   Nothing: -0.1981  Left: -0.2919472   Right: -0.1   Up & Left: 0  Up & Right: -0.2601946   Up: -0.38449
+V: 46   Nothing: -0.2216071  Left: 0   Right: -0.1443234   Up & Left: -0.1516014  Up & Right: -0.2816762   Up: 0
+V: 47   Nothing: -0.9916567  Left: -0.6906505   Right: -0.9287683   Up & Left: -0.2344831  Up & Right: -0.7760153   Up: -0.3971725
+V: 48   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 49   Nothing: -0.6409867  Left: -0.8575404   Right: -0.7922798   Up & Left: -0.945475  Up & Right: -0.1649662   Up: -0.9109406
+V: 50   Nothing: 0  Left: -0.11791   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 51   Nothing: 0  Left: -0.3299942   Right: -0.1223475   Up & Left: -0.162291  Up & Right: -0.1981   Up: 0
+V: 52   Nothing: -0.2884093  Left: -0.4301707   Right: -0.28729   Up & Left: -0.6821457  Up & Right: -0.6841272   Up: -0.2444872
+V: 53   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 54   Nothing: -0.489444  Left: -0.5617046   Right: -3.84315   Up & Left: -0.3237556  Up & Right: -1.988946   Up: -0.379371
+V: 55   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 56   Nothing: -1.0171  Left: 0   Right: -1.009   Up & Left: -0.07171871  Up & Right: -1.8181   Up: 0
+V: 57   Nothing: 0  Left: -0.2152   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 58   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 59   Nothing: -1.09  Left: -1   Right: -0.1   Up & Left: -0.1  Up & Right: 0   Up: 0
+V: 60   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 61   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 62   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 63   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 64   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 65   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 66   Nothing: 0  Left: 0   Right: -0.1   Up & Left: 0  Up & Right: 0   Up: 0
+V: 67   Nothing: -0.1  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 68   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 69   Nothing: -0.1  Left: 0   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 70   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 71   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 72   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 73   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 74   Nothing: 0  Left: 0   Right: 0   Up & Left: -0.1  Up & Right: -0.1   Up: 0
+V: 75   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 76   Nothing: 0  Left: 0   Right: 5   Up & Left: 0  Up & Right: 0   Up: 0
+V: 77   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 78   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 79   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 80   Nothing: -1.069658  Left: -1.302638   Right: -1.092577   Up & Left: -0.9793587  Up & Right: -1.184191   Up: -0.8465007
+V: 81   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 82   Nothing: -1.392317  Left: -1.261805   Right: -1.187086   Up & Left: -1.154351  Up & Right: -1.188626   Up: -1.057964
+V: 83   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 84   Nothing: -0.8778719  Left: -1.06365   Right: -0.8336644   Up & Left: -0.9365639  Up & Right: -1.073648   Up: -0.9003029
+V: 85   Nothing: -0.30349  Left: -0.5837654   Right: -0.1998829   Up & Left: -0.4352972  Up & Right: -0.6001354   Up: -0.459249
+V: 86   Nothing: -0.1147522  Left: 0   Right: -0.309413   Up & Left: -0.1698592  Up & Right: -0.1472861   Up: -0.1
+V: 87   Nothing: -1.025269  Left: -0.8494284   Right: -1.004528   Up & Left: -1.03725  Up & Right: -1.053137   Up: -0.9637249
+V: 88   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 89   Nothing: -1.218254  Left: -0.8143227   Right: -0.0709721   Up & Left: -1.043752  Up & Right: -0.4379123   Up: -1.156033
+V: 90   Nothing: -0.1098829  Left: 0   Right: 0.0462047   Up & Left: 0  Up & Right: -0.1171   Up: -0.1
+V: 91   Nothing: -0.28891  Left: -0.2453314   Right: -0.1252   Up & Left: -0.2442373  Up & Right: -0.5417604   Up: -0.2010537
+V: 92   Nothing: -0.3534005  Left: -0.995896   Right: -0.8498805   Up & Left: -0.4687505  Up & Right: -0.6640545   Up: -0.2684719
+V: 93   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 94   Nothing: -0.6224254  Left: -0.04661834   Right: -0.54802   Up & Left: 0.01091526  Up & Right: -0.4912854   Up: -0.6161309
+V: 95   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 96   Nothing: -0.3706037  Left: 0   Right: -0.1   Up & Left: -0.4374202  Up & Right: 0   Up: -0.4547292
+V: 97   Nothing: 0  Left: -0.4646609   Right: -0.19   Up & Left: -0.19  Up & Right: -0.1   Up: -0.133219
+V: 98   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 99   Nothing: -0.109  Left: -0.1   Right: -0.1   Up & Left: 0  Up & Right: 0   Up: -0.1
+V: 100   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 101   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 102   Nothing: -0.1  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 103   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 104   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 105   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 106   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 107   Nothing: 0  Left: 0   Right: -0.1   Up & Left: 0  Up & Right: 0   Up: 0
+V: 108   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 109   Nothing: -0.1  Left: -0.1   Right: -0.109   Up & Left: -0.1  Up & Right: 0   Up: -0.19
+V: 110   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 111   Nothing: 0  Left: 0   Right: -0.19   Up & Left: 0  Up & Right: -0.1   Up: 0
+V: 112   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 113   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 114   Nothing: 0  Left: -0.1   Right: 0   Up & Left: -0.1  Up & Right: 0   Up: 0
+V: 115   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 116   Nothing: 0  Left: -0.1   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 117   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 118   Nothing: 0  Left: 0   Right: 0   Up & Left: 0  Up & Right: 0   Up: 0
+V: 119   Nothing: 0  Left: 0   Right: 5   Up & Left: 0  Up & Right: 0   Up: 0
 

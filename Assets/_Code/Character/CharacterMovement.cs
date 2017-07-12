@@ -167,15 +167,15 @@ public class CharacterMovement : MonoBehaviour {
 
         int state = 0;
 
-        if (possY == 0)
+        if (possY < 1)
         {
             state = (int)possX / 5;
         }
-        else if (possY == 1)
+        else if (possY < 2)
         {
             state = (int)(possX / 5) + 40;
         }
-        else if (possY == 2)
+        else if (possY < 3)
         {
             state = (int)possX / 5 + 80;
         }
