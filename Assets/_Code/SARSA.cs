@@ -15,7 +15,7 @@ public class SARSA : MonoBehaviour
     private List<State> state;
     private List<Action> action;
 
-    public Policy policy;
+    //public Policy policy;
 
     //RL Settings
     int currentState;
@@ -68,19 +68,23 @@ public class SARSA : MonoBehaviour
             state[i].StateValue = i;
             if (i == 39 || i == 79 || i == 119)
             {
-                state[i].Reward = 50;
+                state[i].Reward = 200;
             }
-            else if ((i>=16 & i<=19))
+            else if ((i==56 || i==57))
             {
                 state[i].Reward = -10;
             }
-            else if (i == 52 || i == 68)
+            else if (i == 16)
             {
                 state[i].Reward = 2;
             }
+            else if (i == 96)
+            {
+                state[i].Reward = 4;
+            }
             else
             {
-                state[i].Reward = -1;
+                state[i].Reward = -2;
             }
 
 
@@ -92,7 +96,7 @@ public class SARSA : MonoBehaviour
         int currentEpisode = 0;
         int currentAction = 0;
         float startTime;
-        int Episodes = 70;
+        int Episodes = 40;
         //int AfterEpisodes = 70;
         //int AfterEGreddy = 1;
 
@@ -119,7 +123,7 @@ public class SARSA : MonoBehaviour
 
         while (currentEpisode < Episodes)
         {
-            
+
             nextState = character.CurrentState();
             currentStateUI.text = nextState.ToString();
 
@@ -158,7 +162,7 @@ public class SARSA : MonoBehaviour
                 episodeUI.text = currentEpisode.ToString();
 
             }
-            else if(currentState >= 16 & currentState <= 19)
+            else if (currentState == 56 || currentState == 57)
                 {
                 currentState = 0;
                 firstAction = "R";
@@ -254,13 +258,15 @@ public class SARSA : MonoBehaviour
     {
         character.ResetPoss();
         int currentState = 0;
-        string nextMove = policy.vValue[currentState].action;
+        Policy.Instance.LoadPolicy();
+
+        string nextMove = Policy.Instance.policyState.state[currentState].action;
         character.Move(nextMove);
         yield return new WaitForSeconds(.2f);
 
         while (true)
         {
-            if(character.CurrentState() == 39 || character.CurrentState() == 79 || character.CurrentState() == 119)
+            if (character.CurrentState() == 39 || character.CurrentState() == 79 || character.CurrentState() == 119)
             {
                 break;
             }
@@ -268,8 +274,8 @@ public class SARSA : MonoBehaviour
             {
                 currentState = character.CurrentState();
             }
-            
-            nextMove = policy.vValue[currentState].action;
+
+            nextMove = Policy.Instance.policyState.state[currentState].action;
             character.Move(nextMove);
             yield return new WaitForSeconds(.2f);
         }
@@ -281,12 +287,19 @@ public class SARSA : MonoBehaviour
         {
             string MaxAction = GetMaxQ(i);
 
-            Vvalue pol;
-
-            pol.state = i;
+            PolicyValues pol = new PolicyValues();
             pol.action = MaxAction;
-            policy.vValue.Add(pol);
-            print(pol.state + "    " + pol.action);
+            pol.value = i;
+            //Policy.Instance.policyState.state[i].action = MaxAction;
+            //Policy.Instance.policyState.state[i].value = i;
+
+            Policy.Instance.policyState.state.Add(pol);
+            Policy.Instance.SavePolicy();
+
+            //pol.state = i;
+            //pol.action = MaxAction;
+            //policy.vValue.Add(pol);
+            print(pol.value + "    " + pol.action);
 
         }
     }
@@ -294,7 +307,7 @@ public class SARSA : MonoBehaviour
     public void WriteVtable()
     {
 
-        string filePath = Application.dataPath + "/Vtable.txt";
+        string filePath = Application.dataPath + "/StreamingAssets/Vtable.txt";
 
         if (!File.Exists(filePath))
         {
@@ -336,7 +349,7 @@ public class SARSA : MonoBehaviour
     public void WriteActions()
     {
         
-        string filePath = Application.dataPath + "/Actions.txt";
+        string filePath = Application.dataPath + "/StreamingAssets/Actions.txt";
 
         if (!File.Exists(filePath))
         {
@@ -375,7 +388,7 @@ public class SARSA : MonoBehaviour
     public void WriteQtable()
     {
 
-        string filePath = Application.dataPath + "/Qtable.txt";
+        string filePath = Application.dataPath + "/StreamingAssets/Qtable.txt";
 
         if (!File.Exists(filePath))
         {

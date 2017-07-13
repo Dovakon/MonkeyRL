@@ -167,20 +167,23 @@ public class CharacterMovement : MonoBehaviour {
 
         int state = 0;
 
-        if (possY < 1)
+        if (possY < 2)
         {
             state = (int)possX / 5;
         }
-        else if (possY < 2)
+        else if (possY < 4)
         {
             state = (int)(possX / 5) + 40;
         }
-        else if (possY < 3)
+        else if (possY < 6)
         {
             state = (int)possX / 5 + 80;
         }
-
-        return state;
+        //else if (possY < 4)
+            //{
+            //    state = (int)possX / 5 + 120;
+            //}
+            return state;
     }
 
     public void ResetPoss()

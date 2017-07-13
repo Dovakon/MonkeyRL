@@ -103,6 +103,10 @@
     <None Include="Assets\Actions.txt" />
     <None Include="Assets\Platform Game Assets\Readme.txt" />
     <None Include="Assets\Qtable.txt" />
+    <None Include="Assets\StreamingAssets\Actions.txt" />
+    <None Include="Assets\StreamingAssets\Qtable.txt" />
+    <None Include="Assets\StreamingAssets\Vtable.txt" />
+    <None Include="Assets\StreamingAssets\XML\Policy.xml" />
     <None Include="Assets\Vtable.txt" />
     <None Include="Assets\data.txt" />
   </ItemGroup>
