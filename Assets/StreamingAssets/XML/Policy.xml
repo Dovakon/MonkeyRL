@@ -3,27 +3,27 @@
   <state>
     <PolicyValues>
       <value>0</value>
-      <action>L</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>1</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>2</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>3</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>4</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>5</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>6</value>
@@ -31,7 +31,7 @@
     </PolicyValues>
     <PolicyValues>
       <value>7</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>8</value>
@@ -39,23 +39,23 @@
     </PolicyValues>
     <PolicyValues>
       <value>9</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>10</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>11</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>12</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>13</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>14</value>
@@ -67,95 +67,95 @@
     </PolicyValues>
     <PolicyValues>
       <value>16</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>17</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>18</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>19</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>20</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>21</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>22</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>23</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>24</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>25</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>26</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>27</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>28</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>29</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>30</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>31</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>32</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>33</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>34</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>35</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>36</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>37</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>38</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>39</value>
@@ -163,27 +163,27 @@
     </PolicyValues>
     <PolicyValues>
       <value>40</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>41</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>42</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>43</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>44</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>45</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>46</value>
@@ -191,27 +191,27 @@
     </PolicyValues>
     <PolicyValues>
       <value>47</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>48</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>49</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>50</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>51</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>52</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>53</value>
@@ -219,27 +219,27 @@
     </PolicyValues>
     <PolicyValues>
       <value>54</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>55</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>56</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>57</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>58</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>59</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>60</value>
@@ -247,7 +247,7 @@
     </PolicyValues>
     <PolicyValues>
       <value>61</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>62</value>
@@ -255,67 +255,67 @@
     </PolicyValues>
     <PolicyValues>
       <value>63</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>64</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>65</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>66</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>67</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>68</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>69</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>70</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>71</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>72</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>73</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>74</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>75</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>76</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>77</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>78</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>79</value>
@@ -323,11 +323,11 @@
     </PolicyValues>
     <PolicyValues>
       <value>80</value>
-      <action>L</action>
+      <action>N</action>
     </PolicyValues>
     <PolicyValues>
       <value>81</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>82</value>
@@ -335,11 +335,11 @@
     </PolicyValues>
     <PolicyValues>
       <value>83</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>84</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>85</value>
@@ -347,59 +347,59 @@
     </PolicyValues>
     <PolicyValues>
       <value>86</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>87</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>88</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>89</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>90</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>91</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>92</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>93</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>94</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>95</value>
-      <action>N</action>
+      <action>UL</action>
     </PolicyValues>
     <PolicyValues>
       <value>96</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>97</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>98</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>99</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>100</value>
@@ -407,39 +407,39 @@
     </PolicyValues>
     <PolicyValues>
       <value>101</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>102</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>103</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>104</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>105</value>
-      <action>N</action>
+      <action>L</action>
     </PolicyValues>
     <PolicyValues>
       <value>106</value>
-      <action>N</action>
+      <action>UR</action>
     </PolicyValues>
     <PolicyValues>
       <value>107</value>
-      <action>N</action>
+      <action>U</action>
     </PolicyValues>
     <PolicyValues>
       <value>108</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>109</value>
-      <action>N</action>
+      <action>R</action>
     </PolicyValues>
     <PolicyValues>
       <value>110</value>

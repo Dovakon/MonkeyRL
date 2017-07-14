@@ -12,6 +12,8 @@ public class SARSA : MonoBehaviour
     public CharacterMovement character;
     public Text episodeUI;
     public Text currentStateUI;
+    public GameObject arrow;
+
     private List<State> state;
     private List<Action> action;
 
@@ -35,7 +37,7 @@ public class SARSA : MonoBehaviour
     {
         state = new List<State>();
         action = new List<Action>();
-        StartCoroutine(Learning());
+
     }
 
 
@@ -55,7 +57,14 @@ public class SARSA : MonoBehaviour
             PlayerPrefs.SetInt("Episode", 0);
             Application.Quit();
         }
-
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(Learning());
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            InstantiateArrows();
+        }
 
     }
     
@@ -68,23 +77,23 @@ public class SARSA : MonoBehaviour
             state[i].StateValue = i;
             if (i == 39 || i == 79 || i == 119)
             {
-                state[i].Reward = 200;
+                state[i].Reward = 500;
             }
             else if ((i==56 || i==57))
             {
-                state[i].Reward = -10;
+                state[i].Reward = -20;
             }
             else if (i == 16)
             {
-                state[i].Reward = 2;
+                state[i].Reward = -4;
             }
             else if (i == 96)
             {
-                state[i].Reward = 4;
+                state[i].Reward = -2;
             }
             else
             {
-                state[i].Reward = -2;
+                state[i].Reward = -5;
             }
 
 
@@ -96,7 +105,7 @@ public class SARSA : MonoBehaviour
         int currentEpisode = 0;
         int currentAction = 0;
         float startTime;
-        int Episodes = 40;
+        int Episodes = 100;
         //int AfterEpisodes = 70;
         //int AfterEGreddy = 1;
 
@@ -127,7 +136,7 @@ public class SARSA : MonoBehaviour
             nextState = character.CurrentState();
             currentStateUI.text = nextState.ToString();
 
-            eGreddy = 30 / ((Time.time - startTime) * (currentEpisode + 1));
+            eGreddy = 100 / ((Time.time - startTime) * (currentEpisode + 1));
             //print(eGreddy);
 
             if (Random.value <= eGreddy)
@@ -168,7 +177,7 @@ public class SARSA : MonoBehaviour
                 firstAction = "R";
                 character.ResetPoss();
                 character.Move(firstAction);
-                startTime = Time.time;
+                //startTime = Time.time;
                 yield return new WaitForSeconds(.2f);
 
                 
@@ -301,6 +310,60 @@ public class SARSA : MonoBehaviour
             //policy.vValue.Add(pol);
             print(pol.value + "    " + pol.action);
 
+        }
+    }
+
+    void InstantiateArrows()
+    {
+        for (int i = 0; i < state.Count; i++)
+        {
+            string action = GetMaxQ(i);
+            int Zrotation = 0;
+            float Xposs,Yposs;
+
+            Xposs = i * .5f;
+            Yposs = 0;
+            if(Xposs < 20)
+            {
+                Yposs = 1;
+            }
+            else if (Xposs < 40)
+            {
+                Yposs = 3;
+                Xposs -= 20; 
+            }
+            else if (Xposs < 60)
+            {
+                Yposs = 5;
+                Xposs -= 40;
+            }
+
+            if (action == "N")
+            {
+                Zrotation = 270;
+            }
+            if (action == "L")
+            {
+                Zrotation = 180;
+            }
+            else if (action == "R")
+            {
+                Zrotation = 0;
+            }
+            else if (action == "UL")
+            {
+                Zrotation = -135;
+            }
+            else if (action == "UR")
+            {
+                Zrotation = 45;
+            }
+            else if (action == "U")
+            {
+                Zrotation = 90;
+            }
+            Instantiate(arrow, new Vector3(Xposs, Yposs, 0), Quaternion.Euler(new Vector3(0, 0, Zrotation)));
+            //obj.transform.parent = this.gameObject.transform;
         }
     }
 
