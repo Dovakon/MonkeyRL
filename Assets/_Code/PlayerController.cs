@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButton("Jump") && canJump)
         {
             rigibody.velocity = Vector2.up * jumpVelocity;
-
+            print(Time.time);
             //animator.SetBool("Run_02", false);
             //animator.SetBool("Idle_01", false);
             //animator.SetBool("Jump_01", true);
@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (coll.gameObject.tag == "Ground")
         {
+            //print(Time.time);
             canJump = true;
         }
     }

@@ -401,19 +401,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/_Code
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/_Code
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Anestis\Desktop\MonkeyRL
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 80}
-    m_SelectedIDs: 74290000
-    m_LastClickedID: 10612
-    m_ExpandedIDs: 00000000d424000086250000a0250000b4250000002600002e26000070260000d02600004c2700004e2700000c2800002c28000032280000342800003628000044280000762800008828000092290000be2900000a2a00000e2a0000302a0000aa2c000000ca9a3bffffff7f
+    m_SelectedIDs: 8a250000
+    m_LastClickedID: 9610
+    m_ExpandedIDs: 00000000d424000086250000a0250000b4250000002600003226000076260000d626000052270000542700001228000032280000382800003a2800003c2800004a2800007c2800008e28000094290000c02900000c2a0000102a0000322a0000b62c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -441,7 +441,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 082f0000
     m_LastClickedID: 12040
-    m_ExpandedIDs: 00000000d424000086250000a0250000b4250000002600002e26000070260000d02600004c2700004e2700000c2800002c28000032280000342800003628000044280000762800008828000092290000be2900000a2a00000e2a0000302a0000aa2c0000
+    m_ExpandedIDs: 00000000d424000086250000a0250000b4250000002600003226000076260000d626000052270000542700001228000032280000382800003a2800003c2800004a2800007c2800008e28000094290000c02900000c2a0000102a0000322a0000b62c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,8 +466,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 845cf5ff
-    m_LastClickedInstanceID: -697212
+    m_SelectedInstanceIDs: 14060000
+    m_LastClickedInstanceID: 1556
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 1c3b00003a3500002a2900001c2b00004e2c000028260000ac370000c2290000d22c0000ca2600008e25000000000000142a0000
     m_RenameOverlay:
@@ -493,7 +493,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 31}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 200
 --- !u!114 &15
@@ -557,23 +557,23 @@ MonoBehaviour:
     height: 476
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 845cf5ff
-    m_LastClickedID: -697212
+    m_SelectedIDs: aefbffff
+    m_LastClickedID: -1106
     m_ExpandedIDs: e2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: wall
-      m_OriginalName: wall
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10938
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -609,14 +609,14 @@ MonoBehaviour:
     width: 1014
     height: 476
   m_SceneLighting: 0
-  lastFramingTime: 6492.019488990079
+  lastFramingTime: 25850.831119893133
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.734603, y: 1.3557514, z: 0}
+    m_Target: {x: 5.639886, y: -1.3770885, z: 0}
     speed: 2
-    m_Value: {x: 9.734603, y: 1.3557514, z: 0}
+    m_Value: {x: 5.639886, y: -1.3770885, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -643,9 +643,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.555641
+    m_Target: 14.142354
     speed: 2
-    m_Value: 11.555641
+    m_Value: 14.142354
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -683,7 +683,7 @@ MonoBehaviour:
     height: 433
   m_ResetOnNextRepaint: 0
   m_IgnoreNextPostprocessEvent: 0
-  m_SelectedAssetPath: Assets/Sprites/arrow.png
+  m_SelectedAssetPath: Assets/Sprites/Grass.png
   m_Selected:
     m_Name: 
     m_OriginalName: 

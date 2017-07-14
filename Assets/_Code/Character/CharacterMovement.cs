@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour {
 
-    enum Movement { N, L, R, UL, UR, U};
+    enum Movement {N, L, R, U};
 
     Movement chosenMovement;
 
@@ -30,12 +30,12 @@ public class CharacterMovement : MonoBehaviour {
 
         rigibody = GetComponent<Rigidbody2D>();
         export = new ExportData();
+        chosenMovement = Movement.N;
     }
 
 
     void Update()
     {
-
         if (chosenMovement == Movement.N)
         {
             //Do Nothing
@@ -48,35 +48,11 @@ public class CharacterMovement : MonoBehaviour {
         {
             transform.Translate(Vector2.right * Speed * Time.deltaTime);
         }
-        if (chosenMovement == Movement.UL)
-        {
-            if (canJump)
-            {
-                rigibody.velocity = Vector2.up * jumpVelocity;
-
-                canJump = false;
-            }
-
-            transform.Translate(Vector2.left * Speed * Time.deltaTime);
-        }
-        if (chosenMovement == Movement.UR)
-        {
-            if (canJump)
-            {
-                rigibody.velocity = Vector2.up * jumpVelocity;
-
-                canJump = false;
-
-            }
-
-            transform.Translate(Vector2.right * Speed * Time.deltaTime);
-        }
         if (chosenMovement == Movement.U)
         {
             if (canJump)
-            {
+            {  
                 rigibody.velocity = Vector2.up * jumpVelocity;
-
                 canJump = false;
             }
             
@@ -107,12 +83,7 @@ public class CharacterMovement : MonoBehaviour {
             //UR ----> Up & Right
             //U ----> Up
             
-
-            if(action == "N")
-            {
-                chosenMovement = Movement.N;
-                //action = "N";
-            }
+        
             if (action == "L")
             {
                 chosenMovement = Movement.L;
@@ -122,16 +93,6 @@ public class CharacterMovement : MonoBehaviour {
             {
                 chosenMovement = Movement.R;
                 //action = "R";
-            }
-            if (action == "UL")
-            {
-                chosenMovement = Movement.UL;
-                //action = "UL";
-            }
-            if (action == "UR")
-            {
-                chosenMovement = Movement.UR;
-                //action = "UR";
             }
             if (action == "U")
             {
@@ -162,23 +123,24 @@ public class CharacterMovement : MonoBehaviour {
 
         //find state
 
-        float possX = Mathf.Round(transform.position.x * 10);
-        float possY = Mathf.Round(transform.position.y);
+        float possX = transform.position.x;
+        float possY = transform.position.y;
 
         int state = 0;
 
         if (possY < 2)
         {
-            state = (int)possX / 5;
+            state = (int)possX;
         }
         else if (possY < 4)
         {
-            state = (int)(possX / 5) + 40;
+            state = (int)(possX) + 20;
         }
         else if (possY < 6)
         {
-            state = (int)possX / 5 + 80;
+            state = (int)(possX) + 40;
         }
+        //print(transform.position+" -  " + state);
         //else if (possY < 4)
             //{
             //    state = (int)possX / 5 + 120;
@@ -188,7 +150,7 @@ public class CharacterMovement : MonoBehaviour {
 
     public void ResetPoss()
     {
-        transform.position = new Vector2(0, 0);
+        transform.position = new Vector2(.3f, 0);
     }
 
     public void StopMoving()

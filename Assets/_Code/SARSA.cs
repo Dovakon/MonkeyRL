@@ -71,29 +71,29 @@ public class SARSA : MonoBehaviour
     IEnumerator Learning()
     {
 
-        for (int i = 0; i < 120; i++)
+        for (int i = 0; i < 60; i++)
         {
             state.Add(new State());
             state[i].StateValue = i;
-            if (i == 39 || i == 79 || i == 119)
+            if (i == 19 || i == 39 || i == 59)
             {
                 state[i].Reward = 500;
             }
-            else if ((i==56 || i==57))
+            else if (i==28) //Trap
             {
-                state[i].Reward = -20;
+                state[i].Reward = -50;
             }
-            else if (i == 16)
+            else if (i == 8) // Coin +2
             {
-                state[i].Reward = -4;
+                state[i].Reward = -10;
             }
-            else if (i == 96)
+            else if (i == 48) // Coin +4 
             {
-                state[i].Reward = -2;
+                state[i].Reward = -1;
             }
             else
             {
-                state[i].Reward = -5;
+                state[i].Reward = -10;
             }
 
 
@@ -105,7 +105,7 @@ public class SARSA : MonoBehaviour
         int currentEpisode = 0;
         int currentAction = 0;
         float startTime;
-        int Episodes = 100;
+        int Episodes = 50;
         //int AfterEpisodes = 70;
         //int AfterEGreddy = 1;
 
@@ -126,8 +126,9 @@ public class SARSA : MonoBehaviour
 
         action.Add(new Action(currentAction, Time.time - startTime, currentState, firstAction, state[currentState].Reward));
 
+        
         yield return new WaitForSeconds(.2f);
-
+        
         episodeUI.text = currentEpisode.ToString();
 
         while (currentEpisode < Episodes)
@@ -136,7 +137,7 @@ public class SARSA : MonoBehaviour
             nextState = character.CurrentState();
             currentStateUI.text = nextState.ToString();
 
-            eGreddy = 100 / ((Time.time - startTime) * (currentEpisode + 1));
+            eGreddy = (25 - currentEpisode) / (Time.time - startTime);    // * ((currentEpisode) + 1));
             //print(eGreddy);
 
             if (Random.value <= eGreddy)
@@ -158,37 +159,39 @@ public class SARSA : MonoBehaviour
             state[currentState].Action[firstAction] = QValue;
 
 
-            if (currentState == 39 || currentState == 79 || currentState == 119)
+            if (currentState == 19 || currentState == 39 || currentState == 59)
             {
+                currentEpisode++;
+                episodeUI.text = currentEpisode.ToString();
+
                 currentState = 0;
-                firstAction = "R";
+                firstAction = DoRandomAction();
                 character.ResetPoss();
                 character.Move(firstAction);
                 startTime = Time.time;
                 yield return new WaitForSeconds(.2f);
+                
 
-                currentEpisode++;
-                episodeUI.text = currentEpisode.ToString();
 
             }
-            else if (currentState == 56 || currentState == 57)
-                {
-                currentState = 0;
-                firstAction = "R";
-                character.ResetPoss();
-                character.Move(firstAction);
-                //startTime = Time.time;
-                yield return new WaitForSeconds(.2f);
+            //else if (currentState == 56 || currentState == 57)
+            //    {
+            //    currentState = 0;
+            //    firstAction = "R";
+            //    character.ResetPoss();
+            //    character.Move(firstAction);
+            //    //startTime = Time.time;
+            //    yield return new WaitForSeconds(.2f);
 
                 
-            }
+            //}
             else
             {
                 currentState = nextState;
                 firstAction = nextAction;
                 character.Move(firstAction);
                 yield return new WaitForSeconds(.2f);
-
+                
             }
 
             currentAction++;
@@ -204,55 +207,32 @@ public class SARSA : MonoBehaviour
 
     string DoRandomAction()
     {
-        int action = Random.Range(0, 6);
+        int action = Random.Range(0, 3);
 
         if (action == 0)
         {
-            return "N";
+            return "L";
         }
         else if (action == 1)
         {
-            return "L";
+            return "R";
         }
         else if (action == 2)
         {
-            return "R";
-        }
-        else if (action == 3)
-        {
-            return "UL";
-        }
-        else if (action == 4)
-        {
-            return "UR";
-        }
-        else if (action == 5)
-        {
             return "U";
         }
+        
         return null;
     }
 
     string GetMaxQ(int st)
     {
-        string action = "N";
+        string action = "L";
 
-
-        if (state[st].Action[action] < state[st].Action["L"])
-        {
-            action = "L";
-        }
+        
         if (state[st].Action[action] < state[st].Action["R"])
         {
             action = "R";
-        }
-        if (state[st].Action[action] < state[st].Action["UL"])
-        {
-            action = "UL";
-        }
-        if (state[st].Action[action] < state[st].Action["UR"])
-        {
-            action = "UR";
         }
         if (state[st].Action[action] < state[st].Action["U"])
         {
@@ -321,7 +301,7 @@ public class SARSA : MonoBehaviour
             int Zrotation = 0;
             float Xposs,Yposs;
 
-            Xposs = i * .5f;
+            Xposs = i;
             Yposs = 0;
             if(Xposs < 20)
             {
@@ -337,11 +317,7 @@ public class SARSA : MonoBehaviour
                 Yposs = 5;
                 Xposs -= 40;
             }
-
-            if (action == "N")
-            {
-                Zrotation = 270;
-            }
+            
             if (action == "L")
             {
                 Zrotation = 180;
@@ -350,19 +326,11 @@ public class SARSA : MonoBehaviour
             {
                 Zrotation = 0;
             }
-            else if (action == "UL")
-            {
-                Zrotation = -135;
-            }
-            else if (action == "UR")
-            {
-                Zrotation = 45;
-            }
             else if (action == "U")
             {
                 Zrotation = 90;
             }
-            Instantiate(arrow, new Vector3(Xposs, Yposs, 0), Quaternion.Euler(new Vector3(0, 0, Zrotation)));
+            Instantiate(arrow, new Vector3(Xposs + .30f, Yposs, 0), Quaternion.Euler(new Vector3(0, 0, Zrotation)));
             //obj.transform.parent = this.gameObject.transform;
         }
     }
@@ -477,8 +445,8 @@ public class SARSA : MonoBehaviour
         {
             string MaxAction = GetMaxQ(i);
 
-            writer.WriteLine("V: " + state[i].StateValue + "   Nothing: " + state[i].Action["N"] + "  Left: " + state[i].Action["L"] + "   Right: " + state[i].Action["R"]
-                + "   Up & Left: " + state[i].Action["UL"] + "  Up & Right: " + state[i].Action["UR"] + "   Up: " + state[i].Action["U"]);
+            writer.WriteLine("V: " + state[i].StateValue +"  Left: " + state[i].Action["L"] + "   Right: " + state[i].Action["R"]
+                 + "   Up: " + state[i].Action["U"]);
             
 
         }
@@ -504,11 +472,9 @@ public class State
     {
         Action = new Dictionary<string, float>();
         
-        Action.Add("N", 0);
+       
         Action.Add("L", 0);
         Action.Add("R", 0);
-        Action.Add("UL", 0);
-        Action.Add("UR", 0);
         Action.Add("U", 0);
     }
 }
