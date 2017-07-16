@@ -150,7 +150,7 @@ public class CharacterMovement : MonoBehaviour {
 
     public void ResetPoss()
     {
-        transform.position = new Vector2(.3f, 0);
+        transform.position = new Vector2(.1f, 0);
     }
 
     public void StopMoving()

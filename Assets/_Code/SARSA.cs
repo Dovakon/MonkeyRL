@@ -50,6 +50,11 @@ public class SARSA : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S))
         {
+
+            WriteQtable();
+            WriteVtable();
+            WriteActions();
+
             SavePolicy();
         }
         if (Input.GetButton("Cancel"))
@@ -105,7 +110,7 @@ public class SARSA : MonoBehaviour
         int currentEpisode = 0;
         int currentAction = 0;
         float startTime;
-        int Episodes = 50;
+        int Episodes = 500;
         //int AfterEpisodes = 70;
         //int AfterEGreddy = 1;
 
@@ -126,21 +131,24 @@ public class SARSA : MonoBehaviour
 
         action.Add(new Action(currentAction, Time.time - startTime, currentState, firstAction, state[currentState].Reward));
 
-        
+
         yield return new WaitForSeconds(.2f);
-        
+
         episodeUI.text = currentEpisode.ToString();
 
         while (currentEpisode < Episodes)
         {
 
             nextState = character.CurrentState();
+
             currentStateUI.text = nextState.ToString();
 
-            eGreddy = (25 - currentEpisode) / (Time.time - startTime);    // * ((currentEpisode) + 1));
-            //print(eGreddy);
-
-            if (Random.value <= eGreddy)
+            //eGreddy = (500 - currentEpisode) / (Time.time - startTime);    // * ((currentEpisode) + 1));
+            eGreddy = ((currentEpisode) * .002f);
+           
+            float rad = Random.value;
+            //print(rad);
+            if (rad >= eGreddy)
             {
                 print("random");
                 nextAction = DoRandomAction();
@@ -174,17 +182,20 @@ public class SARSA : MonoBehaviour
 
 
             }
-            //else if (currentState == 56 || currentState == 57)
-            //    {
-            //    currentState = 0;
-            //    firstAction = "R";
-            //    character.ResetPoss();
-            //    character.Move(firstAction);
-            //    //startTime = Time.time;
-            //    yield return new WaitForSeconds(.2f);
+            else if (currentState == 28)
+            {
+                currentEpisode++;
+                episodeUI.text = currentEpisode.ToString();
 
-                
-            //}
+                currentState = 0;
+                firstAction = "R";
+                character.ResetPoss();
+                character.Move(firstAction);
+                startTime = Time.time;
+                yield return new WaitForSeconds(.2f);
+
+
+            }
             else
             {
                 currentState = nextState;
@@ -245,6 +256,7 @@ public class SARSA : MonoBehaviour
 
     IEnumerator RunPolicy()
     {
+        
         character.ResetPoss();
         int currentState = 0;
         Policy.Instance.LoadPolicy();
@@ -252,7 +264,7 @@ public class SARSA : MonoBehaviour
         string nextMove = Policy.Instance.policyState.state[currentState].action;
         character.Move(nextMove);
         yield return new WaitForSeconds(.2f);
-
+        
         while (true)
         {
             if (character.CurrentState() == 39 || character.CurrentState() == 79 || character.CurrentState() == 119)
@@ -262,6 +274,7 @@ public class SARSA : MonoBehaviour
             else
             {
                 currentState = character.CurrentState();
+                print(currentState);
             }
 
             nextMove = Policy.Instance.policyState.state[currentState].action;
