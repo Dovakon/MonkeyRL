@@ -27,6 +27,34 @@ public class SARSA : MonoBehaviour
     {
         state = new List<State>();
         action = new List<Action>();
+
+        //for (int i = 0; i < 120; i++)
+        //{
+        //    state.add(new state());
+        //    state[i].statevalue = i;
+        //    if (i == 39 || i == 79 || i == 119)
+        //    {
+        //        state[i].reward = 1000;
+        //    }
+        //    else if (i == 27 || i == 48) //trap
+        //    {
+        //        state[i].reward = -50;
+        //    }
+        //    else if (i == 8) // coin +2
+        //    {
+        //        state[i].reward = -10;
+        //    }
+        //    else if (i == 88 || i == 103 || i == 108) // coin +4 
+        //    {
+        //        state[i].reward = -1;
+        //    }
+        //    else
+        //    {
+        //        state[i].reward = -10;
+        //    }
+
+
+        //}
     }
 
 
@@ -59,7 +87,7 @@ public class SARSA : MonoBehaviour
             state[i].StateValue = i;
             if (i == 39 || i == 79 || i == 119)
             {
-                state[i].Reward = 500;
+                state[i].Reward = 50000;
             }
             else if (i == 27 || i == 48) //Trap
             {
@@ -101,6 +129,8 @@ public class SARSA : MonoBehaviour
         string firstAction;
         string nextAction;
 
+        int reachTree = 0;
+
         yield return new WaitForSeconds(1f);
 
         //First Action 
@@ -125,6 +155,7 @@ public class SARSA : MonoBehaviour
             currentStateUI.text = nextState.ToString();
             
             eGreddy = (currentEpisode / Episodes);
+            eGreddy = Mathf.Clamp(eGreddy, .1f, 0.9f);
             
             if (Random.value >= eGreddy)
             {
@@ -136,12 +167,13 @@ public class SARSA : MonoBehaviour
                 nextAction = GetMaxQ(nextState);
                 print("Max");
             }
+            
 
             QValue = state[currentState].Action[firstAction];
             qValue = state[nextState].Action[nextAction];
 
-            float rw = state[nextState].Reward - Time.time;
-            QValue = QValue + Alpha * (state[nextState].Reward + (Gamma * qValue) - QValue);
+            float rw = state[nextState].Reward; //- Time.time;
+            QValue = QValue + Alpha * (rw + (Gamma * qValue) - QValue);
 
             state[currentState].Action[firstAction] = QValue;
 
@@ -151,8 +183,10 @@ public class SARSA : MonoBehaviour
                 currentEpisode++;
                 episodeUI.text = currentEpisode.ToString();
 
+               
+
                 currentState = 0;
-                firstAction = DoRandomAction();
+                firstAction = "R";
                 character.ResetPoss();
                 character.Move(firstAction);
                 yield return new WaitForSeconds(.2f);
@@ -162,12 +196,11 @@ public class SARSA : MonoBehaviour
             }
             else if (currentState == 27 || currentState == 48)
             {
-                currentEpisode++;
-                episodeUI.text = currentEpisode.ToString();
+                //currentEpisode++;
+                //episodeUI.text = currentEpisode.ToString();
 
-                currentState = 0;
-                firstAction = DoRandomAction();
-                character.ResetPoss();
+                currentState = nextState;
+                firstAction = nextAction;
                 character.Move(firstAction);
                 yield return new WaitForSeconds(.2f);
 
@@ -186,6 +219,7 @@ public class SARSA : MonoBehaviour
             action.Add(new Action(currentAction, Time.time, currentState, firstAction, state[currentState].Reward));
 
         }
+        print(reachTree);
 
         character.StopMoving();
         WriteQtable();
@@ -279,27 +313,30 @@ public class SARSA : MonoBehaviour
 
     void InstantiateArrows()
     {
+        Policy.Instance.LoadPolicy();
+
+
         for (int i = 0; i < state.Count; i++)
         {
-            string action = GetMaxQ(i);
+            string action = Policy.Instance.policyState.state[i].action;
             int Zrotation = 0;
             float Xposs,Yposs;
 
             Xposs = i;
             Yposs = 0;
-            if(Xposs < 20)
+            if(Xposs < 40)
             {
                 Yposs = 1;
             }
-            else if (Xposs < 40)
+            else if (Xposs < 80)
             {
                 Yposs = 3;
-                Xposs -= 20; 
+                Xposs -= 40; 
             }
-            else if (Xposs < 60)
+            else if (Xposs < 120)
             {
                 Yposs = 5;
-                Xposs -= 40;
+                Xposs -= 80;
             }
             
             if (action == "L")

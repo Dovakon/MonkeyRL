@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
-
+using System.Security.Permissions;
 
 public class Policy : MonoBehaviour{
 
@@ -30,6 +30,12 @@ public class Policy : MonoBehaviour{
     public void SavePolicy()
     {
         string filePath = Application.dataPath + "/StreamingAssets/XML/Policy.xml";
+
+        //overWritten file//
+        File.SetAttributes(filePath, FileAttributes.Normal);
+        FileIOPermission filePermission =
+                 new FileIOPermission(FileIOPermissionAccess.AllAccess, filePath);
+        //****//
 
         XmlSerializer serializer = new XmlSerializer(typeof(PolicyStates));
 
